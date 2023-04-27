@@ -1,0 +1,164 @@
+@font-face {
+    font-family: Basketball;
+    src: url("fonts/Basketball.otf")
+}
+
+@font-face {
+    font-family: CursedTimer;
+    src: url("fonts/CursedTimerUlil-Aznm.ttf");
+}
+
+@keyframes leader {
+    50% {color: #5DF94F;}
+    100% {color: #F94F6D;}
+}
+
+body {
+    margin: 0;
+    background-color: #1B244A;
+    color: #EEEEEE;
+}
+
+h3 {
+    text-align: center;
+    margin: 68px 0 21px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 575px;
+}
+
+.scoreboard {
+    background-color: #080001;
+    color: #F94F6D;
+    width: 155px;
+    height: 120px;
+    margin: 21px 0 12px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.foulboard {
+    background-color: #080001;
+    color: #F94F6D;
+    width: 90px;
+    height: 45px;
+    margin: 32px auto 12px auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn-array {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-score {
+    font-family: CursedTimer;
+    width: 45px;
+    height: 45px;
+    color: #9AABD8;
+    background-color: inherit;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn-foul {
+    font-family: CursedTimer;
+    width: 90px;
+    height: 45px;
+    color: #9AABD8;
+    background-color: inherit;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.btn-timer {
+    font-family: Basketball, sans-serif;
+    width: 144px;
+    height: 45px;
+    margin: 16px 0 0 0;
+    color: #9AABD8;
+    background-color: inherit;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.title {
+    font-family: Basketball, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 36px;
+}
+
+#btn-reset {
+    font-family: Basketball, sans-serif;
+    width: 575px;
+    height: 45px;
+    margin: 32px 0 32px 0 ;
+    color: #9AABD8;
+    background-color: inherit;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+#home-score {
+    font-family: CursedTimer;
+    font-size: 90px;
+    line-height: 141%;
+
+    animation-name: leader;
+    animation-duration: 0s;
+    animation-iteration-count: infinite;
+}
+
+#guest-score {
+    font-family: CursedTimer;
+    font-size: 90px;
+    line-height: 141%;
+
+    animation-name: leader;
+    animation-duration: 0s;
+    animation-iteration-count: infinite;
+}
+
+#home-fouls {
+    font-family: CursedTimer;
+    font-size: 28px;
+    line-height: 175%;
+}
+
+#guest-fouls {
+    font-family: CursedTimer;
+    font-size: 28px;
+    line-height: 175%;
+}
+
+#per-timer {
+    font-family: CursedTimer;
+    font-size: 32px;
+    line-height: 0%;
+}
+
+#per-counter {
+    font-family: CursedTimer;
+    font-size: 32px;
+    line-height: 0%;
+}
+
+#per-desc {
+    text-align: center;
+    width: 575px;
+    font-family: Basketball, sans-serif;
+    font-size: 32px;
+    line-height: 0%
+}

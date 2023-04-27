@@ -1,0 +1,49 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3 class="title">HOME</h3>
+                <p id="home-score"  class="scoreboard"></p>
+                <div class="btn-array">
+                    <button class="btn-score" onclick="scoreAdd('home',1)">+1</button>
+                    <button class="btn-score" onclick="scoreAdd('home',2)">+2</button>
+                    <button class="btn-score" onclick="scoreAdd('home',3)">+3</button>
+                </div>
+                <p id="home-fouls" class="foulboard"></p>
+                <button class="btn-foul" onclick="foulAdd('home')">FOUL</button>
+            </div>
+            <div>
+                <h3 class="title">GUEST</h3>
+                <p id="guest-score"  class="scoreboard"></p>
+                <div class="btn-array">
+                    <button class="btn-score" onclick="scoreAdd('guest',1)">+1</button>
+                    <button class="btn-score" onclick="scoreAdd('guest',2)">+2</button>
+                    <button class="btn-score" onclick="scoreAdd('guest',3)">+3</button>
+                </div>
+                <p id="guest-fouls" class="foulboard"></p>
+                <button class="btn-foul" onclick="foulAdd('guest')">FOUL</button>
+            </div>
+        </div>
+        <button id="btn-reset" onclick="scoreClear()">New Game</button>
+        <div class = "container">
+            <div>
+                <p id="per-timer">Period Timer</p>
+            </div>
+            <div>
+                <p id="per-counter">Period Counter</p>
+            </div>
+        </div>
+        <div class"container">
+            <p id="per-desc">Period Description</p>
+        </div>
+        <div class="container">
+            <button class="btn-timer" onclick="timerStart()">Timer Start</button>
+            <button class="btn-timer" onclick="timerStop()">Timer Stop</button>
+            <button class="btn-timer" onclick="timerReset()">Timer Reset</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
